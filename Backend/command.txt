@@ -1,0 +1,17 @@
+/* Create a new virtual environment */
+python -m venv myenv
+
+/* Activate the virtual environment */
+myenv\Scripts\activate
+
+/* Install Django and other dependencies */
+pip install django djangorestframework pillow tensorflow==2.15.0
+
+/* Create a Django project */
+django-admin startproject tyre_inspection
+cd tyre_inspection
+
+/* Run the Django development server */
+python manage.py runserver
+
+
